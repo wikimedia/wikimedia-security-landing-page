@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "eslint .",
+    "renew:blog": "curl -s https://phabricator.wikimedia.org/phame/blog/feed/13/ -o src/_data/blog.xml && node build/xml2json.js src/_data/blog.xml > src/_data/blog.json && rm src/_data/blog.xml",
+    "renew": "npm run renew:blog",
+    "less": "node build/less2css.js",
+    "less:watch": "node build/less2css.js --watch",
+    "verify": "test -z '$(git status --porcelain public_html/)'"
+  },
+  "devDependencies": {
+    "eslint": "4.19.1",
+    "eslint-config-wikimedia": "0.5.0",
+    "less": "3.12.2",
+    "node-watch": "0.6.4",
+    "wikimedia-ui-base": "0.16.0",
+    "xml2js": "0.4.23"
+  }
+}

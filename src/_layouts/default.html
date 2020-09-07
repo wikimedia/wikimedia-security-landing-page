@@ -1,0 +1,62 @@
+---
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset=utf-8>
+<title>{{ page.title }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+{% include_relative lib/main.css %}
+</style>
+<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
+<link rel="alternate" type="application/atom+xml" href="https://phabricator.wikimedia.org/phame/blog/feed/13/" title="Wikimedia Security Team">
+
+<header><div class="wm-container">
+ <a role="banner" href="{{ site.baseurl }}/" title="Navigate to the home page"><em>Wikimedia</em> Security</a>
+ <span class="wm-header-caption">
+    {%- for item in site.data.extnav -%}
+    {% if site.data.extnav.first != item %} &bull; {% endif %}<a href="{{ item.href | escape }}">{{ item.text }}</a>
+    {%- endfor -%}
+  </span>
+</div></header>
+<main role="main"><div class="wm-container">
+  <nav class="wm-site-nav"><ul class="wm-nav">
+  {%- for item in site.data.sitenav -%}
+    <li>
+      <a {% if page.url == item.href -%} class="wm-nav-item-active" {%  endif -%} href="{{ item.href | escape }}">{{ item.text }}</a>
+      {%- if page.url == item.href and page.wmui_subnav -%}
+      <ul>
+      {%- for sub in page.wmui_subnav -%}
+        <li><a href="{{ sub.href | escape }}">{{ sub.text | escape }}</a></li>
+      {%- endfor %}
+      </ul>
+      {%- endif -%}
+    </li>
+  {%- endfor %}
+  </ul></nav>
+<article>
+  {{ content }}
+</article>
+</div></main>
+
+<footer role="contentinfo"><div class="wm-container perf-footer-cols">
+  <div>
+    <p>
+    {%- for item in site.data.extnav -%}
+      {% if site.data.extnav.first != item %} &bull; {%- endif %}
+      <a href="{{ item.href | escape }}">{{ item.text }}</a>
+    {%- endfor %}
+    </p>
+    <p>Made with <a href="https://www.mediawiki.org/wiki/Wikimedia_Security_Team">♥ by Wikimedia Security Team</a> at <a href="https://www.wikimedia.org">Wikimedia Foundation</a>.</p>
+  </div>
+  <div>
+    <h3>Latest blog posts</h3>
+    <ul>
+      <li><a href="{{ site.data.blog.feed.entry[0].id }}">{{ site.data.blog.feed.entry[0].title }}</a></li>
+      <li><a href="{{ site.data.blog.feed.entry[1].id }}">{{ site.data.blog.feed.entry[1].title }}</a></li>
+      <li><a href="{{ site.data.blog.feed.entry[2].id }}">{{ site.data.blog.feed.entry[2].title }}</a></li>
+    </ul>
+  </div>
+</footer>

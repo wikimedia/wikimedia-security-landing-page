@@ -1,0 +1,54 @@
+{
+    "feed": {
+        "entry": [
+            {
+                "id": [
+                    "https://phabricator.wikimedia.org/phame/post/view/200/"
+                ],
+                "title": [
+                    "Addressing bug from 2019: information about private, security-related Phab tickets"
+                ]
+            },
+            {
+                "id": [
+                    "https://phabricator.wikimedia.org/phame/post/view/187/"
+                ],
+                "title": [
+                    "Changes to  Security Team Workflow"
+                ]
+            },
+            {
+                "id": [
+                    "https://phabricator.wikimedia.org/phame/post/view/185/"
+                ],
+                "title": [
+                    "14 January 2020 security incident on Phabricator"
+                ]
+            },
+            {
+                "id": [
+                    "https://phabricator.wikimedia.org/phame/post/view/121/"
+                ],
+                "title": [
+                    "translatewiki.net security incident"
+                ]
+            },
+            {
+                "id": [
+                    "https://phabricator.wikimedia.org/phame/post/view/114/"
+                ],
+                "title": [
+                    "Additional details on OurMine"
+                ]
+            },
+            {
+                "id": [
+                    "https://phabricator.wikimedia.org/phame/post/view/113/"
+                ],
+                "title": [
+                    "Details of dictionary attack from May 2018"
+                ]
+            }
+        ]
+    }
+}

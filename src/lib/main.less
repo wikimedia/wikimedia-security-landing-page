@@ -1,0 +1,239 @@
+/*! security.wikimedia.org | Based on <https://design.wikimedia.org/style-guide/> */
+
+@import ( reference ) '../../node_modules/wikimedia-ui-base/wikimedia-ui-base.less';
+
+@wmperf-desktop-wide: 1200px;
+
+html {
+  background-color: @wmui-color-base80;
+  font-family: sans-serif; /* Basic support without css-variables */
+  font-family: @font-family-system-sans;
+  line-height: @line-height-base;
+  font-size: 10px;
+  color: #222;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-family: @font-family-serif;
+  font-weight: @font-weight-normal;
+}
+
+h2 {
+  font-size: 2.4rem;
+  padding-bottom: 2px;
+  border-bottom: 3px solid @wmui-color-base80;
+}
+
+blockquote {
+  padding-left: 1rem;
+  border-left:  3px solid @wmui-color-base80;
+}
+
+hr {
+  margin: 3.2rem 0;
+  border: 3px solid @wmui-color-base80;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  color: @wmui-color-accent50;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.wm-container {
+  margin: 0 auto;
+  max-width: @wmperf-desktop-wide;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+@media ( min-width: 320px ) {
+  /* Beyond --width-breakpoint-mobile */
+  .wm-container {
+    padding: 0 2rem;
+  }
+  .wm-site-nav {
+    margin: 0 -2rem;
+  }
+}
+@media ( min-width: 720px ) {
+  /* Beyond --width-breakpoint-tablet */
+  .wm-container {
+    padding: 0 3.2rem;
+  }
+}
+
+header .wm-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+header a[role="banner"] {
+  line-height: 4.9rem;
+  font-weight: bold;
+  color: inherit;
+}
+header a[role="banner"] em {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wm-header-caption {
+  line-height: 4.9rem;
+}
+@media ( max-width: 768px ) {
+  .wm-header-caption {
+    display: none;
+  }
+}
+
+main {
+  background: @wmui-color-base100;
+  box-shadow: 0 1px 4px 0 rgba( 0, 0 ,0, 0.25 );
+  padding: 3.2rem 0 6rem 0;
+}
+
+ul {
+  margin: 1rem;
+  padding: 0;
+}
+ul ul {
+  margin: 0 0 0 1em;
+}
+
+footer {
+  padding: 2.4rem 0;
+  font-size: 1.3rem;
+}
+footer nav ul {
+  margin: 1em 0;
+}
+footer nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 0.8rem 0 0;
+}
+footer nav li a {
+  font-weight: bold;
+}
+@media ( min-width: 414px ) {
+  footer nav li:after {
+    content: "\2022";
+    color: @wmui-color-base30;
+    padding: 0 0 0 0.8rem;
+  }
+  footer nav li:last-child:after {
+    content: "";
+  }
+}
+
+.wm-nav li {
+  display: block;
+  flex: 0 1 345px;
+  margin: 0 1rem 0.1rem 0;
+  box-sizing: border-box;
+}
+.wm-nav a {
+  display: block;
+  padding: 1rem 2.4rem;
+  border-radius: 2px;
+  color: @wmui-color-base10;
+}
+.wm-nav li ul {
+  margin-top: 1.2rem;
+  margin-left: 2.4rem;
+  margin-bottom: 1em;
+  font-size: 1.4rem;
+  color: @wmui-color-base20;
+}
+.wm-nav li ul a {
+  border-left: 1px solid @wmui-color-base80;
+}
+.wm-nav a:hover {
+  background-color: @wmui-color-base90;
+}
+.wm-nav .wm-nav-item-active,
+.wm-nav .wm-nav-item-active:hover {
+  background-color: @wmui-color-accent90;
+  color: @wmui-color-accent50;
+  border-radius: @border-radius-base;
+  font-weight: @font-weight-semi-bold;
+  cursor: default;
+}
+.wm-nav li ul .wm-nav-item-active,
+.wm-nav li ul .wm-nav-item-active:hover {
+  background-color: @wmui-color-base90;
+  color: @color-base--active;
+  border-left-color: @wmui-color-base0;
+}
+
+@media (max-width: 720px) {
+  /* Up until --width-breakpoint-tablet */
+  main {
+    padding-top: 1rem;
+  }
+  .wm-site-nav {
+    box-shadow: @box-shadow-menu;
+  }
+  .wm-site-nav ul {
+    margin: 0;
+  }
+  .wm-site-nav li {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 720px) {
+  /* Beyond --width-breakpoint-tablet */
+  .wm-site-nav {
+    float: left;
+    width: 25.6rem;
+    position: relative;
+    z-index: 1;
+  }
+  article {
+    float: left;
+    box-sizing: border-box;
+    width:  100%;
+    margin-left: -25.6rem;
+    padding-left: 27.6rem;
+  }
+  main h1:first-of-type {
+    margin-top: 0;
+  }
+  main:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+.wm-table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  th,
+  td {
+    padding: 2px 5px;
+    vertical-align: top;
+    border-top: 1px solid @wmui-color-base70;
+  }
+  th {
+    text-align: left;
+  }
+  tr:hover {
+    background-color: @wmui-color-base90;
+  }
+}
