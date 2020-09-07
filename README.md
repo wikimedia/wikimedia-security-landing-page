@@ -1,6 +1,6 @@
 # security.wikimedia.org
 
-Lovingly forked from the Performance Team's [site](https://gerrit.wikimedia.org/g/performance/docroot/) visible at (performance.wikimedia.org)[https://performance.wikimedia.org], with inspiration from the Research Team's [site](https://gerrit.wikimedia.org/g/research/landing-page/) visible at [research.wikimedia.org](https://research.wikimedia.org).
+Lovingly forked from the Performance Team's [site](https://gerrit.wikimedia.org/g/performance/docroot/) visible at [performance.wikimedia.org](https://performance.wikimedia.org), with inspiration from the Research Team's [site](https://gerrit.wikimedia.org/g/research/landing-page/) visible at [research.wikimedia.org](https://research.wikimedia.org).
 
 ## Prerequisites
 
