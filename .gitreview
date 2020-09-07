@@ -1,6 +1,6 @@
 [gerrit]
 host=gerrit.wikimedia.org
 port=29418
-project=performance/docroot.git
+project=wikimedia/security/landing-page.git
 defaultbranch=master
 defaultrebase=0
