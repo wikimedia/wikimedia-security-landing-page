@@ -1,9 +1,6 @@
 /*! security.wikimedia.org | Based on <https://design.wikimedia.org/style-guide/> */
-
 @import ( reference ) '../../node_modules/wikimedia-ui-base/wikimedia-ui-base.less';
-
 @wmperf-desktop-wide: 1200px;
-
 html {
   background-color: @wmui-color-base80;
   font-family: sans-serif; /* Basic support without css-variables */
@@ -12,38 +9,31 @@ html {
   font-size: 10px;
   color: #222;
 }
-
 body {
   margin: 0;
   font-size: 1.6rem;
 }
-
 h1 {
   font-size: 3.2rem;
   font-family: @font-family-serif;
   font-weight: @font-weight-normal;
 }
-
 h2 {
   font-size: 2.4rem;
   padding-bottom: 2px;
   border-bottom: 3px solid @wmui-color-base80;
 }
-
 blockquote {
   padding-left: 1rem;
   border-left:  3px solid @wmui-color-base80;
 }
-
 hr {
   margin: 3.2rem 0;
   border: 3px solid @wmui-color-base80;
 }
-
 p {
   line-height: 1.5;
 }
-
 a {
   color: @wmui-color-accent50;
   text-decoration: none;
@@ -52,7 +42,6 @@ a:hover {
   text-decoration: underline;
   text-underline-position: under;
 }
-
 .wm-container {
   margin: 0 auto;
   max-width: @wmperf-desktop-wide;
@@ -74,13 +63,11 @@ a:hover {
     padding: 0 3.2rem;
   }
 }
-
 header .wm-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
-
 header a[role="banner"] {
   line-height: 4.9rem;
   font-weight: bold;
@@ -90,7 +77,6 @@ header a[role="banner"] em {
   font-weight: normal;
   font-style: normal;
 }
-
 .wm-header-caption {
   line-height: 4.9rem;
 }
@@ -99,13 +85,11 @@ header a[role="banner"] em {
     display: none;
   }
 }
-
 main {
   background: @wmui-color-base100;
   box-shadow: 0 1px 4px 0 rgba( 0, 0 ,0, 0.25 );
   padding: 3.2rem 0 6rem 0;
 }
-
 ul {
   margin: 1rem;
   padding: 0;
@@ -113,7 +97,6 @@ ul {
 ul ul {
   margin: 0 0 0 1em;
 }
-
 footer {
   padding: 2.4rem 0;
   font-size: 1.3rem;
@@ -139,7 +122,6 @@ footer nav li a {
     content: "";
   }
 }
-
 .wm-nav li {
   display: block;
   flex: 0 1 345px;
@@ -179,7 +161,6 @@ footer nav li a {
   color: @color-base--active;
   border-left-color: @wmui-color-base0;
 }
-
 @media (max-width: 720px) {
   /* Up until --width-breakpoint-tablet */
   main {
@@ -195,7 +176,6 @@ footer nav li a {
     margin-right: 0;
   }
 }
-
 @media (min-width: 720px) {
   /* Beyond --width-breakpoint-tablet */
   .wm-site-nav {
@@ -220,7 +200,6 @@ footer nav li a {
     clear: both;
   }
 }
-
 .wm-table {
   border-spacing: 0;
   border-collapse: collapse;
@@ -237,7 +216,6 @@ footer nav li a {
     background-color: @wmui-color-base90;
   }
 }
-
 .perf-footer-cols {
   display: flex;
   flex-flow: row wrap;

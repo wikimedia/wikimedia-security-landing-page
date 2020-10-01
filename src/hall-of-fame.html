@@ -1,19 +1,12 @@
 ---
 layout: default
-title: Wikimedia Security Hall of Fame
+title: Hall of Fame - Wikimedia Security
 ---
-<blockquote><p>
-  We seek to secure access to and the integrity of free knowledge.
-</p>
-<p>
-  <a href="https://www.mediawiki.org/wiki/Wikimedia_Security_Team">- Wikimedia Security Team</a>
-</p>
-</blockquote>
-
-<h1>Hall of Fame</h1>
-
+<div class="header">
+	<img src="/img/logo.png" alt="logo" />
+	<h1>Hall of Fame</h1>
+</div>
 <p>This page contains various people that the Wikimedia Security Team would like to give thanks to for responsibly reporting security issues.</p>
-
 <table class="wm-table">
 	<tr>
 		<th>Date</th>
@@ -33,7 +26,5 @@ title: Wikimedia Security Hall of Fame
 		<td>{{ item.cve }}</td>
 	</tr>
 {%- endfor %}
-
 </table>
-
 <p>If you've previously reported a valid security issue (and had it acknowledged and fixed) to Wikimedia, and would like mentioning on this page, please <a href="/contact">contact us</a> and provide details.</p>

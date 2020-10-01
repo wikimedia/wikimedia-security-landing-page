@@ -1,6 +1,10 @@
 - href: /
   text: Home
-- href: /hall-of-fame/
-  text: Hall of Fame
+- href: /services/
+  text: Services
+- href: /handbook/
+  text: Team Handbook
 - href: /contact/
   text: Contact
+- href: /hall-of-fame
+  text: Hall of Fame

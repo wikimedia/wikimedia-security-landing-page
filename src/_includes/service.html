@@ -1,0 +1,9 @@
+<button class="accordion">{{include.service.name}}</button>
+<div class="panel">
+    <p>{{include.service.description}}</p>
+    <ul>
+        {%- for item in include.service.activities -%}
+          <li>{{item}}</li>
+        {%- endfor %}
+    </ul>
+</div>
