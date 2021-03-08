@@ -1,2 +1,8 @@
-[
-]
+[{
+	"date": "2021-01-14",
+	"name": "surg4bij4k",
+	"task": "T272082",
+	"product": "Jetty as bundled with archiva",
+	"desc": "Reflected XSS on archiva.wikimedia.org",
+	"cve": "CVE-2019-10241"
+}]
