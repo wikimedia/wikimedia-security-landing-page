@@ -1,78 +1,6 @@
 - category:
-  name: Security Governance
+  name: Capabilities Management
   services:
-    - name: Security Risk Management
-      description: Provide a security risk management framework to identify and treat risk. Provide security risk assessment and treatment services to the Foundation.
-      activities:
-        - Risk identification
-        - Risk assessment
-        - Risk reporting
-        - Risk treatment
-    - name: Data Protection
-      description: Provide a data protection framework in the pursuit of data management and governance.
-      activities:
-        - Data classification
-        - Data inventory
-        - Data release review
-        - Data governance
-    - name: Security policy and procedure
-      description: Provide a comprehensive set of security policy and procedures to create governance and repeatability for security relevant processes.
-      activities:
-        - Policy creation
-        - Policy management
-        - Policy exception
-    - name: Security Incident Response
-      description: Ensure that threats against the confidentiality, availability and integrity of the Wikimedia Community and Foundation are identified, contained, investigated and remediated.
-      activities:
-        - Security incident plan
-        - Security incident coordination
-        - Security incident playbooks
-    - name: Threat Modeling
-      description: Provide an overview of the threats the bad actors as they relate to the threat landscape.
-      activities:
-        - Foundation threat model
-        - Individual project/service threat modeling
-    - name: Supplier Assessments
-      description: Provide oversight, guidance and assessments for 3rd party suppliers or partners.
-      activities:
-        - Security review for 3rd parties suppliers.
-        - Security specific contract language
-        - Auditing of 3rd parties
-    - name: Security Awareness
-      description: Provide education and security best practice guidance to the Foundation and to the community.
-      activities:
-        - Delivery of security relevant educational material
-    - name: Fusion Center
-      description: Serve as the Security team's intake point for work from all sources. Provide a training ground (talent incubator) for new Security team staff.
-      activities:
-        - Conduct the weekly Security team Clinic meeting
-        - Talent Incubator
-- category:
-  name: Security Engineering
-  services:
-    - name: Application Security
-      description: Security-focused code reviews and audits ranging from basic guidance on a gerrit patch set to full-featured reviews of MediaWiki core, extensions and stand-alone services.
-      activities:
-        - Manual review of patches and code
-        - Dynamic analysis of libraries and applications
-        - Report creation and review
-    - name: Vulnerability Management
-      description: coming soon
-      activities:
-    - name: Privacy Engineering
-      description: Provide procedures and tools for the review of data processing activities to identify and mitigate associated risks to the organization and its users, including compliance with existing policies.
-      activities:
-        - Privacy data reviews
-        - Privacy functionality reviews
-        - Privacy mitigation support
-        - Privacy Awareness and Privacy by Design Training
-- category:
-  name: Security Architecture
-  services:
-    - name: Security Tooling
-      description:
-      activities:
-        - GRC and other tooling creation and management
     - name: Audit
       description:
       activities:
@@ -80,9 +8,85 @@
         - Penetration Testing
         - Compliance
         - Red Team
-    - name: (P)reviews
+    - name: Project Management
+      description: Provide project management and engagement for internal and external initiatives, team documentation, process, procedure and team health initiatives.
+    - name: Security Awareness
+      description: Provide education and security best practice guidance to the Foundation and to the community.
+      activities:
+        - Delivery of security relevant educational material
+    - name: Service Creation & Maturation
+      description: Operationalize changes to and drives maturity for existing security services, executes planning from leadership to coordinate and manage creation of new security services and capabilities. Create consumable metrics and measurements.
+- category:
+  name: Cyber Risk
+  services:
+    - name: Compliance
+      description: Provide compliance with GDPR and PCI
+      activities: 
+    - name: Data Governance
+      description: Provide a data protection framework in the pursuit of data management and governance.
+      activities:
+        - Data classification
+        - Data inventory
+        - Data release review
+        - Data protection
+    - name: Policy
+      description: Provide a comprehensive set of security policy and procedures to create governance and repeatability for security relevant processes.
+      activities:
+        - Policy creation
+        - Policy management
+        - Policy exception
+    - name: Risk Management
+      description: Provide a security risk management framework to identify and treat risk. Provide security risk assessment and treatment services to the Foundation.
+      activities:
+        - Risk identification
+        - Risk assessment
+        - Risk reporting
+        - Risk treatment
+- category:
+  name: Fusion Center
+  services:
+    - name: Security Incident Response
+      description: Ensure that threats against the confidentiality, availability and integrity of the Wikimedia Community and Foundation are identified, contained, investigated and remediated.
+      activities:
+        - Security incident plan
+        - Security incident coordination
+        - Security incident playbooks
+    - name: Threat Intelligence
+      description: Provide an overview of the threats the bad actors as they relate to the threat landscape.
+      activities:
+    - name: Supplier Security
+      description: Provide oversight, guidance and assessments for 3rd party suppliers or partners.
+      activities:
+        - Security review for 3rd parties suppliers.
+        - Security specific contract language
+        - Auditing of 3rd parties
+    - name: Vulnerability Management
+      description: coming soon
+      activities:
+    - name: Vulnerability Intelligence
+      description: coming soon
+    - name: Security Training
+      description: coming soon
+- category:
+  name: Security Architecture
+  services:
+    - name: Application Security
+      description: Security-focused code reviews and audits ranging from basic guidance on a gerrit patch set to full-featured reviews of MediaWiki core, extensions and stand-alone services.
+      activities:
+        - Manual review of patches and code
+        - Dynamic analysis of libraries and applications
+        - Report creation and review
+    - name: Privacy Engineering
+      description: Provide procedures and tools for the review of data processing activities to identify and mitigate associated risks to the organization and its users, including compliance with existing policies.
+      activities:
+        - Privacy data reviews
+        - Privacy functionality reviews
+        - Privacy mitigation support
+        - Privacy Awareness and Privacy by Design Training
+    - name: Security Engineering
       description:
       activities:
-    - name: Enterprise Risk
-      description:
-      activities:
+        - GRC and other tooling creation and management
+    - name: Standards
+      description: Creation, update, review, exception management, and enforcement.
+
