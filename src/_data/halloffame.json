@@ -1,4 +1,20 @@
 [{
+	"date": "2021-10-17",
+	"name": "Aidil Arief",
+	"task": "T293589",
+	"product": "TBD",
+	"desc": "TBD",
+	"cve": "CVE-2021-TBD"
+},
+{
+	"date": "2021-10-16",
+	"name": "Aidil Arief",
+	"task": "T293556",
+	"product": "WikibaseMediaInfo extension",
+	"desc": "Stored XSS via WikibaseMediaInfo caption fields at commons.wikimedia.org",
+	"cve": "CVE-2021-TBD"
+},
+{
 	"date": "2021-01-14",
 	"name": "surg4bij4k",
 	"task": "T272082",
