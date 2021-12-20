@@ -2,9 +2,9 @@
 	"date": "2021-10-17",
 	"name": "Aidil Arief",
 	"task": "T293589",
-	"product": "TBD",
-	"desc": "TBD",
-	"cve": "CVE-2021-TBD"
+	"product": "VisualEditor Extension",
+	"desc": "Blind Stored XSS via Upload Image URL",
+	"cve": "CVE-2021-44855"
 },
 {
 	"date": "2021-10-16",
