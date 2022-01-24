@@ -20,6 +20,10 @@
 </div></header>
 <main role="main"><div class="wm-container">
   <nav class="wm-site-nav">
+    <input id="menu-toggle" type="checkbox" />
+    <label class="menu-button-container" for="menu-toggle">
+      <div class="menu-button"></div>
+    </label>
     <ul class="wm-nav">
      {%- for item in site.data.sitenav -%}
        <li>
