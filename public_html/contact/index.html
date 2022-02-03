@@ -83,11 +83,6 @@ header a[role="banner"] em {
 .wm-header-caption {
   line-height: 4.9rem;
 }
-@media (max-width: 768px) {
-  .wm-header-caption {
-    display: none;
-  }
-}
 main {
   background: #fff;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
@@ -125,6 +120,41 @@ footer nav li a {
     content: "";
   }
 }
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 28px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 5px) ;
+  transform: rotate(-45deg) translate(-5px, 5px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -6px) ;
+  transform: rotate(45deg) translate(-6px, -6px) ;
+}
+
+.wm-header-caption .icon {
+  display: none;
+}
+
 .wm-nav li {
   display: block;
   flex: 0 1 345px;
@@ -169,6 +199,7 @@ footer nav li a {
     padding-top: 1rem;
   }
   .wm-site-nav {
+    display: none;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
   }
   .wm-site-nav ul {
@@ -176,6 +207,20 @@ footer nav li a {
   }
   .wm-site-nav li {
     margin-right: 0;
+  }
+
+  .wm-header-caption a.extnav {
+    display: none;
+  }
+
+  .wm-header-caption a.icon {
+    float: right;
+    display: block;
+    height: 49px;
+  }
+
+  .wm-site-nav.responsive {
+    display: block;
   }
 }
 @media (min-width: 720px) {
@@ -185,6 +230,7 @@ footer nav li a {
     position: relative;
     z-index: 1;
   }
+
   article {
     float: left;
     box-sizing: border-box;
@@ -253,57 +299,6 @@ footer nav li a {
 .flex-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-
-/* Hide mobile hamburger menu while width is large enough */
-.menu-button-container {
-  display: none;
-  height: 100%;
-  width: 30px;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#menu-toggle {
-  display: none;
-}
-
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-  display: block;
-  background-color: #fff;
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
-}
-
-.menu-button::before {
-  content: "";
-  margin-top: -8px;
-}
-
-.menu-button::after {
-  content: "";
-  margin-top: 8px;
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
-}
-
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
 }
 
 /* Display the columns below each other instead of side by side on small screens */
@@ -403,14 +398,17 @@ footer nav li a {
 <link rel="alternate" type="application/atom+xml" href="https://phabricator.wikimedia.org/phame/blog/feed/13/" title="Wikimedia Security Team">
 <header><div class="wm-container">
  <a role="banner" href="/" title="Navigate to the home page"><em>Wikimedia</em> Security</a>
- <span class="wm-header-caption"><a href="/blog/">Blog</a></span>
+ <span class="wm-header-caption"><a class="extnav" href="/blog/">Blog</a><a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+      <div class="container" onclick="changeIcon(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </a>
+  </span>
 </div></header>
 <main role="main"><div class="wm-container">
-  <nav class="wm-site-nav">
-    <input id="menu-toggle" type="checkbox" />
-    <label class="menu-button-container" for="menu-toggle">
-      <div class="menu-button"></div>
-    </label>
+  <nav id="site-nav-bar" class="wm-site-nav">
     <ul class="wm-nav"><li>
          <a href="/">Home</a></li><li>
          <a href="/services/">Services</a></li><li>
@@ -419,6 +417,7 @@ footer nav li a {
          <a href="/hall-of-fame">Hall of Fame</a></li><li>
          <a href="/bug-bounty">Bug Bounty</a></li>
     </ul>
+
   </nav>
 <article>
   <div class="header">
@@ -451,3 +450,18 @@ footer nav li a {
     </ul>
   </div>
 </footer>
+
+<script>
+function changeIcon(x) {
+  x.classList.toggle("change");
+}
+
+function toggleMenu() {
+  var x = document.getElementById("site-nav-bar");
+  if (x.className === "wm-site-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "wm-site-nav";
+  }
+}
+</script>
