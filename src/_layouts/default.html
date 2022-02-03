@@ -14,16 +14,19 @@
  <a role="banner" href="{{ site.baseurl }}/" title="Navigate to the home page"><em>Wikimedia</em> Security</a>
  <span class="wm-header-caption">
     {%- for item in site.data.extnav -%}
-    {% if site.data.extnav.first != item %} &bull; {% endif %}<a href="{{ item.href | escape }}">{{ item.text }}</a>
+    {% if site.data.extnav.first != item %} &bull; {% endif %}<a class="extnav" href="{{ item.href | escape }}">{{ item.text }}</a>
     {%- endfor -%}
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+      <div class="container" onclick="changeIcon(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </a>
   </span>
 </div></header>
 <main role="main"><div class="wm-container">
-  <nav class="wm-site-nav">
-    <input id="menu-toggle" type="checkbox" />
-    <label class="menu-button-container" for="menu-toggle">
-      <div class="menu-button"></div>
-    </label>
+  <nav id="site-nav-bar" class="wm-site-nav">
     <ul class="wm-nav">
      {%- for item in site.data.sitenav -%}
        <li>
@@ -38,6 +41,7 @@
        </li>
      {%- endfor %}
     </ul>
+
   </nav>
 <article>
   {{ content }}
@@ -59,3 +63,18 @@
     </ul>
   </div>
 </footer>
+
+<script>
+function changeIcon(x) {
+  x.classList.toggle("change");
+}
+
+function toggleMenu() {
+  var x = document.getElementById("site-nav-bar");
+  if (x.className === "wm-site-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "wm-site-nav";
+  }
+}
+</script>
