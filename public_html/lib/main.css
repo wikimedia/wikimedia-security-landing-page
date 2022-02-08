@@ -216,6 +216,14 @@ footer nav li a {
   .wm-site-nav.responsive {
     display: block;
   }
+
+  .wm-site-nav.no-js {
+    display: block;
+  }
+
+  .wm-header-caption a.icon.no-js {
+    display: none;
+  }
 }
 @media (min-width: 720px) {
   .wm-site-nav {

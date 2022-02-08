@@ -16,7 +16,7 @@
     {%- for item in site.data.extnav -%}
     {% if site.data.extnav.first != item %} &bull; {% endif %}<a class="extnav" href="{{ item.href | escape }}">{{ item.text }}</a>
     {%- endfor -%}
-    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+    <a href="javascript:void(0);" id="hamburger-icon" class="icon no-js" onclick="toggleMenu()">
       <div class="container" onclick="changeIcon(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -26,7 +26,7 @@
   </span>
 </div></header>
 <main role="main"><div class="wm-container">
-  <nav id="site-nav-bar" class="wm-site-nav">
+  <nav id="site-nav-bar" class="wm-site-nav no-js">
     <ul class="wm-nav">
      {%- for item in site.data.sitenav -%}
        <li>
@@ -65,6 +65,9 @@
 </footer>
 
 <script>
+document.getElementById("site-nav-bar").className = "wm-site-nav";
+document.getElementById("hamburger-icon").className = "icon";
+
 function changeIcon(x) {
   x.classList.toggle("change");
 }

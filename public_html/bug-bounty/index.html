@@ -222,6 +222,14 @@ footer nav li a {
   .wm-site-nav.responsive {
     display: block;
   }
+
+  .wm-site-nav.no-js {
+    display: block;
+  }
+
+  .wm-header-caption a.icon.no-js {
+    display: none;
+  }
 }
 @media (min-width: 720px) {
   .wm-site-nav {
@@ -398,7 +406,7 @@ footer nav li a {
 <link rel="alternate" type="application/atom+xml" href="https://phabricator.wikimedia.org/phame/blog/feed/13/" title="Wikimedia Security Team">
 <header><div class="wm-container">
  <a role="banner" href="/" title="Navigate to the home page"><em>Wikimedia</em> Security</a>
- <span class="wm-header-caption"><a class="extnav" href="/blog/">Blog</a><a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+ <span class="wm-header-caption"><a class="extnav" href="/blog/">Blog</a><a href="javascript:void(0);" id="hamburger-icon" class="icon no-js" onclick="toggleMenu()">
       <div class="container" onclick="changeIcon(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -408,7 +416,7 @@ footer nav li a {
   </span>
 </div></header>
 <main role="main"><div class="wm-container">
-  <nav id="site-nav-bar" class="wm-site-nav">
+  <nav id="site-nav-bar" class="wm-site-nav no-js">
     <ul class="wm-nav"><li>
          <a href="/">Home</a></li><li>
          <a href="/services/">Services</a></li><li>
@@ -489,6 +497,9 @@ footer nav li a {
 </footer>
 
 <script>
+document.getElementById("site-nav-bar").className = "wm-site-nav";
+document.getElementById("hamburger-icon").className = "icon";
+
 function changeIcon(x) {
   x.classList.toggle("change");
 }
