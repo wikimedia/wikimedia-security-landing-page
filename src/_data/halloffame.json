@@ -1,24 +1,434 @@
-[{
-	"date": "2021-10-17",
-	"name": "Aidil Arief",
-	"task": "T293589",
-	"product": "VisualEditor Extension",
-	"desc": "Blind Stored XSS via Upload Image URL",
-	"cve": "CVE-2021-44855"
-},
-{
-	"date": "2021-10-16",
-	"name": "Aidil Arief",
-	"task": "T293556",
-	"product": "WikibaseMediaInfo extension",
-	"desc": "Stored XSS via WikibaseMediaInfo caption fields at commons.wikimedia.org",
-	"cve": "CVE-2021-TBD"
-},
-{
-	"date": "2021-01-14",
-	"name": "surg4bij4k",
-	"task": "T272082",
-	"product": "Jetty as bundled with archiva",
-	"desc": "Reflected XSS on archiva.wikimedia.org",
-	"cve": "CVE-2019-10241"
-}]
+[
+	{
+		"date": "2021-10-17",
+		"product": "VisualEditor Extension",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2021-44855' target='_blank'>CVE-2021-44855</a>",
+		"desc": "Blind Stored XSS via Upload Image URL",
+		"task": "<a href='https://phabricator.wikimedia.org/T293589' target='_blank'>T293589</a>",
+		"name": "Aidil Arief"
+	},
+	{
+		"date": "2021-10-16",
+		"product": "WikibaseMediaInfo extension",
+		"cve": "CVE-2021-TBD",
+		"desc": "Stored XSS via WikibaseMediaInfo caption fields at commons.wikimedia.org",
+		"task": "<a href='https://phabricator.wikimedia.org/T293556' target='_blank'>T293556</a>",
+		"name": "Aidil Arief"
+	},
+	{
+		"date": "2021-01-14",
+		"product": "Jetty as bundled with archiva",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2019-10241' target='_blank'>CVE-2019-10241</a>",
+		"desc": "Reflected XSS on archiva.wikimedia.org",
+		"task": "<a href='https://phabricator.wikimedia.org/T272082' target='_blank'>T272082</a>",
+		"name": "surg4bij4k"
+	},
+	{
+		"date": "November 2017",
+		"product": "MediaWiki 1.29.2, 1.28.3 and 1.27.4",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-8809' target='_blank'>CVE-2017-8809</a>",
+		"desc": "api.php in MediaWiki before 1.27.4, 1.28.x before 1.28.3, and 1.29.x before 1.29.2 has a Reflected File Download vulnerability.",
+		"task": "<a href='https://phabricator.wikimedia.org/T128209' target='_blank'>T128209</a>",
+		"name": "Abdullah Hussam"
+	},
+	{
+		"date": "November 2017",
+		"product": "MediaWiki 1.29.2, 1.28.3 and 1.27.4",
+		"cve": "none",
+		"desc": "No CVE documented. Please consult Phab for more info.",
+		"task": "<a href='https://phabricator.wikimedia.org/T165846' target='_blank'>T165846</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Anomie' target='_blank'>User:Anomie</a>"
+	},
+	{
+		"date": "November 2017",
+		"product": "MediaWiki 1.29.2, 1.28.3 and 1.27.4",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-8810' target='_blank'>CVE-2017-8810</a>",
+		"desc": "MediaWiki before 1.27.4, 1.28.x before 1.28.3, and 1.29.x before 1.29.2, when a private wiki is configured, provides different error messages for failed login attempts depending on whether the username exists, which allows remote attackers to enumerate account names and conduct brute-force attacks via a series of requests.",
+		"task": "<a href='https://phabricator.wikimedia.org/T134100' target='_blank'>T134100</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Matma_Rex' target='_blank'>User:Matma Rex</a>"
+	},
+	{
+		"date": "November 2017",
+		"product": "MediaWiki 1.29.2, 1.28.3 and 1.27.4",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-8808' target='_blank'>CVE-2017-8808</a>",
+		"desc": "MediaWiki before 1.27.4, 1.28.x before 1.28.3, and 1.29.x before 1.29.2 has XSS when the $wgShowExceptionDetails setting is false and the browser sends non-standard URL escaping.",
+		"task": "<a href='https://phabricator.wikimedia.org/T178451' target='_blank'>T178451</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Bawolff' target='_blank'>User:Bawolff</a>"
+	},
+	{
+		"date": "November 2017",
+		"product": "MediaWiki 1.29.2, 1.28.3 and 1.27.4",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-8811' target='_blank'>CVE-2017-8811</a>",
+		"desc": "The implementation of raw message parameter expansion in MediaWiki before 1.27.4, 1.28.x before 1.28.3, and 1.29.x before 1.29.2 allows HTML mangling attacks.",
+		"task": "<a href='https://phabricator.wikimedia.org/T176247' target='_blank'>T176247</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Bastenbas' target='_blank'>User:Bastenbas</a>"
+	},
+	{
+		"date": "November 2017",
+		"product": "MediaWiki 1.29.2, 1.28.3 and 1.27.4",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-8812' target='_blank'>CVE-2017-8812</a>",
+		"desc": "MediaWiki before 1.27.4, 1.28.x before 1.28.3, and 1.29.x before 1.29.2 allows remote attackers to inject > (greater than) characters via the id attribute of a headline.",
+		"task": "<a href='https://phabricator.wikimedia.org/T125163' target='_blank'>T125163</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Bawolff' target='_blank'>User:Bawolff</a>"
+	},
+	{
+		"date": "November 2017",
+		"product": "MediaWiki 1.29.2, 1.28.3 and 1.27.4",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-8814' target='_blank'>CVE-2017-8814</a>",
+		"desc": "The language converter in MediaWiki before 1.27.4, 1.28.x before 1.28.3, and 1.29.x before 1.29.2 allows attackers to replace text inside tags via a rule definition followed by \"a lot of junk.\"",
+		"task": "<a href='https://phabricator.wikimedia.org/T124404' target='_blank'>T124404</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Bawolff' target='_blank'>User:Bawolff</a>"
+	},
+	{
+		"date": "November 2017",
+		"product": "MediaWiki 1.29.2, 1.28.3 and 1.27.4",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-8815' target='_blank'>CVE-2017-8815</a>",
+		"desc": "The language converter in MediaWiki before 1.27.4, 1.28.x before 1.28.3, and 1.29.x before 1.29.2 allows attribute injection attacks via glossary rules.",
+		"task": "<a href='https://phabricator.wikimedia.org/T119158' target='_blank'>T119158</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Bawolff' target='_blank'>User:Bawolff</a>"
+	},
+	{
+		"date": "November 2017",
+		"product": "MediaWiki 1.29.2, 1.28.3 and 1.27.4",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-0361' target='_blank'>CVE-2017-0361</a>",
+		"desc": "Mediawiki before 1.28.1 / 1.27.2 / 1.23.16 contains an information disclosure flaw, where the api.log might contain passwords in plaintext.",
+		"task": "<a href='https://phabricator.wikimedia.org/T180488' target='_blank'>T180488</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Anomie' target='_blank'>User:Anomie</a>"
+	},
+	{
+		"date": "November 2017",
+		"product": "MediaWiki 1.29.2, 1.28.3 and 1.27.4",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-9841' target='_blank'>CVE-2017-9841</a>",
+		"desc": "Util/PHP/eval-stdin.php in PHPUnit before 4.8.28 and 5.x before 5.6.3 allows remote attackers to execute arbitrary PHP code via HTTP POST data beginning with a \"<?php \" substring, as demonstrated by an attack on a site with an exposed /vendor folder, i.e., external access to the /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php URI.",
+		"task": "<a href='https://phabricator.wikimedia.org/T180231' target='_blank'>T180231</a>",
+		"name": "Tom Hutchison"
+	},
+	{
+		"date": "April 2017",
+		"product": "MediaWiki 1.28.1, 1.27.2 and 1.23.16",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-0363' target='_blank'>CVE-2017-0363</a>",
+		"desc": "Mediawiki before 1.28.1 / 1.27.2 / 1.23.16 has a flaw where Special:UserLogin?returnto=interwiki:foo will redirect to external sites.",
+		"task": "<a href='https://phabricator.wikimedia.org/T109140' target='_blank'>T109140</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Valhallasw' target='_blank'>User:Valhallasw</a>"
+	},
+	{
+		"date": "April 2017",
+		"product": "MediaWiki 1.28.1, 1.27.2 and 1.23.16",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-0364' target='_blank'>CVE-2017-0364</a>",
+		"desc": "Mediawiki before 1.28.1 / 1.27.2 / 1.23.16 contains a flaw where Special:Search allows redirects to any interwiki link.",
+		"task": "<a href='https://phabricator.wikimedia.org/T122209' target='_blank'>T122209</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Bawolff' target='_blank'>User:Bawolff</a>"
+	},
+	{
+		"date": "April 2017",
+		"product": "MediaWiki 1.28.1, 1.27.2 and 1.23.16",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-0365' target='_blank'>CVE-2017-0365</a>",
+		"desc": "Mediawiki before 1.28.1 / 1.27.2 / 1.23.16 contains a XSS vulnerability in SearchHighlighter::highlightText() with non-default configurations.",
+		"task": "<a href='https://phabricator.wikimedia.org/T144845' target='_blank'>T144845</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Bawolff' target='_blank'>User:Bawolff</a>"
+	},
+	{
+		"date": "April 2017",
+		"product": "MediaWiki 1.28.1, 1.27.2 and 1.23.16",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-0361' target='_blank'>CVE-2017-0361</a>",
+		"desc": "Mediawiki before 1.28.1 / 1.27.2 / 1.23.16 contains an information disclosure flaw, where the api.log might contain passwords in plaintext.",
+		"task": "<a href='https://phabricator.wikimedia.org/T125177' target='_blank'>T125177</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Tgr' target='_blank'>User:Tgr</a>"
+	},
+	{
+		"date": "April 2017",
+		"product": "MediaWiki 1.28.1, 1.27.2 and 1.23.16",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-0362' target='_blank'>CVE-2017-0362</a>",
+		"desc": "Mediawiki before 1.28.1 / 1.27.2 / 1.23.16 contains a flaw where the \"Mark all pages visited\" on the watchlist does not require a CSRF token.",
+		"task": "<a href='https://phabricator.wikimedia.org/T150044' target='_blank'>T150044</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Legoktm' target='_blank'>User:Legoktm</a>"
+	},
+	{
+		"date": "April 2017",
+		"product": "MediaWiki 1.28.1, 1.27.2 and 1.23.16",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-0368' target='_blank'>CVE-2017-0368</a>",
+		"desc": "Mediawiki before 1.28.1 / 1.27.2 / 1.23.16 contains a flaw making rawHTML mode apply to system messages.",
+		"task": "<a href='https://phabricator.wikimedia.org/T156184' target='_blank'>T156184</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Bawolff' target='_blank'>User:Bawolff</a>"
+	},
+	{
+		"date": "April 2017",
+		"product": "MediaWiki 1.28.1, 1.27.2 and 1.23.16",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-0366' target='_blank'>CVE-2017-0366</a>",
+		"desc": "Mediawiki before 1.28.1 / 1.27.2 / 1.23.16 contains a flaw allowing to evade SVG filter using default attribute values in DTD declaration.",
+		"task": "<a href='https://phabricator.wikimedia.org/T151735' target='_blank'>T151735</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Cassiogomes11' target='_blank'>User:Cassiogomes11</a>"
+	},
+	{
+		"date": "April 2017",
+		"product": "MediaWiki 1.28.1, 1.27.2 and 1.23.16",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-0370' target='_blank'>CVE-2017-0370</a>",
+		"desc": "Mediawiki before 1.28.1 / 1.27.2 / 1.23.16 contains a flaw were Spam blacklist is ineffective on encoded URLs inside file inclusion syntax's link parameter.",
+		"task": "<a href='https://phabricator.wikimedia.org/T48143' target='_blank'>T48143</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:MZMcBride' target='_blank'>User:MZMcBride</a>"
+	},
+	{
+		"date": "April 2017",
+		"product": "MediaWiki 1.28.1, 1.27.2 and 1.23.16",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-0369' target='_blank'>CVE-2017-0369</a>",
+		"desc": "Mediawiki before 1.28.1 / 1.27.2 / 1.23.16 contains a flaw, allowing a sysops to undelete pages, although the page is protected against it.",
+		"task": "<a href='https://phabricator.wikimedia.org/T108138' target='_blank'>T108138</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Luke081515' target='_blank'>User:Luke081515</a>"
+	},
+	{
+		"date": "April 2017",
+		"product": "MediaWiki 1.28.1, 1.27.2 and 1.23.16",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-0367' target='_blank'>CVE-2017-0367</a>",
+		"desc": "Mediawiki before 1.28.1 / 1.27.2 contains an unsafe use of temporary directory, where having LocalisationCache directory default to system tmp directory is insecure.",
+		"task": "<a href='https://phabricator.wikimedia.org/T161453' target='_blank'>T161453</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Bawolff' target='_blank'>User:Bawolff</a>"
+	},
+	{
+		"date": "April 2017",
+		"product": "MediaWiki 1.28.1, 1.27.2 and 1.23.16",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2017-0372' target='_blank'>CVE-2017-0372</a>",
+		"desc": "Parameters injection in the SyntaxHighlight extension of Mediawiki before 1.23.16, 1.27.3 and 1.28.2 might result in multiple vulnerabilities.",
+		"task": "<a href='https://phabricator.wikimedia.org/T158689' target='_blank'>T158689</a>",
+		"name": "Yorick Koster (Securify)"
+	},
+	{
+		"date": "August 2016",
+		"product": "MediaWiki 1.27.1, 1.26.4, 1.23.15",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2016-6335' target='_blank'>CVE-2016-6335</a>",
+		"desc": "MediaWiki before 1.23.15, 1.26.x before 1.26.4, and 1.27.x before 1.27.1 does not generate head items in the context of a given title, which allows remote attackers to obtain sensitive information via a parse action to api.php.",
+		"task": "<a href='https://phabricator.wikimedia.org/T139565, T139570' target='_blank'>T139565, T139570</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:This,_that_and_the_other' target='_blank'>User:This, that and the other</a>"
+	},
+	{
+		"date": "August 2016",
+		"product": "MediaWiki 1.27.1, 1.26.4, 1.23.15",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2016-6334' target='_blank'>CVE-2016-6334</a>",
+		"desc": "Cross-site scripting (XSS) vulnerability in the Parser::replaceInternalLinks2 method in MediaWiki before 1.23.15, 1.26.x before 1.26.4, and 1.27.x before 1.27.1 allows remote attackers to inject arbitrary web script or HTML via vectors involving replacement of percent encoding in unclosed internal links.",
+		"task": "<a href='https://phabricator.wikimedia.org/T137264' target='_blank'>T137264</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Bawolff' target='_blank'>User:Bawolff</a>"
+	},
+	{
+		"date": "August 2016",
+		"product": "MediaWiki 1.27.1, 1.26.4, 1.23.15",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2016-6333' target='_blank'>CVE-2016-6333</a>",
+		"desc": "Cross-site scripting (XSS) vulnerability in the CSS user subpage preview feature in MediaWiki before 1.23.15, 1.26.x before 1.26.4, and 1.27.x before 1.27.1 allows remote attackers to inject arbitrary web script or HTML via the edit box in Special:MyPage/common.css.",
+		"task": "<a href='https://phabricator.wikimedia.org/T133147' target='_blank'>T133147</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Bawolff' target='_blank'>User:Bawolff</a>"
+	},
+	{
+		"date": "August 2016",
+		"product": "MediaWiki 1.27.1, 1.26.4, 1.23.15",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2016-6336' target='_blank'>CVE-2016-6336</a>",
+		"desc": "MediaWiki before 1.23.15, 1.26.x before 1.26.4, and 1.27.x before 1.27.1 allows remote authenticated users with undelete permissions to bypass intended suppressrevision and deleterevision restrictions and remove the revision deletion status of arbitrary file revisions by using Special:Undelete.",
+		"task": "<a href='https://phabricator.wikimedia.org/T132926' target='_blank'>T132926</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Bawolff' target='_blank'>User:Bawolff</a>"
+	},
+	{
+		"date": "August 2016",
+		"product": "MediaWiki 1.27.1, 1.26.4, 1.23.15",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2016-6332' target='_blank'>CVE-2016-6332</a>",
+		"desc": "MediaWiki before 1.23.15, 1.26.x before 1.26.4, and 1.27.x before 1.27.1, when $wgBlockDisablesLogin is true, might allow remote attackers to obtain sensitive information by leveraging failure to terminate sessions when a user account is blocked.",
+		"task": "<a href='https://phabricator.wikimedia.org/T129738' target='_blank'>T129738</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Multichill' target='_blank'>User:Multichill</a>"
+	},
+	{
+		"date": "August 2016",
+		"product": "MediaWiki 1.27.1, 1.26.4, 1.23.15",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2016-6331' target='_blank'>CVE-2016-6331</a>",
+		"desc": "ApiParse in MediaWiki before 1.23.15, 1.26.x before 1.26.4, and 1.27.x before 1.27.1 allows remote attackers to bypass intended per-title read restrictions via a parse action to api.php.",
+		"task": "<a href='https://phabricator.wikimedia.org/T115333' target='_blank'>T115333</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Church_of_emacs' target='_blank'>User:Church of emacs</a>"
+	},
+	{
+		"date": "August 2016",
+		"product": "MediaWiki 1.27.1, 1.26.4, 1.23.15",
+		"cve": "none",
+		"desc": "No CVE documented. Please consult Phab for more info.",
+		"task": "<a href='https://phabricator.wikimedia.org/T57548' target='_blank'>T57548</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:PleaseStand' target='_blank'>User:PleaseStand</a>"
+	},
+	{
+		"date": "August 2016",
+		"product": "MediaWiki 1.27.1, 1.26.4, 1.23.15",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2016-6337' target='_blank'>CVE-2016-6337</a>",
+		"desc": "MediaWiki 1.27.x before 1.27.1 might allow remote attackers to bypass intended session access restrictions by leveraging a call to the UserGetRights function after Session::getAllowedUserRights.",
+		"task": "<a href='https://phabricator.wikimedia.org/T139670' target='_blank'>T139670</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Anomie' target='_blank'>User:Anomie</a>"
+	},
+	{
+		"date": "May 2016",
+		"product": "MediaWiki 1.26.3, 1.25.6 and 1.23.14",
+		"cve": "none",
+		"desc": "No CVE documented. Please consult Phab for more info.",
+		"task": "<a href='https://phabricator.wikimedia.org/T122056' target='_blank'>T122056</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Unicornisaurous' target='_blank'>User:Unicornisaurous</a>"
+	},
+	{
+		"date": "May 2016",
+		"product": "MediaWiki 1.26.3, 1.25.6 and 1.23.14",
+		"cve": "none",
+		"desc": "No CVE documented. Please consult Phab for more info.",
+		"task": "<a href='https://phabricator.wikimedia.org/T127114' target='_blank'>T127114</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Bawolff' target='_blank'>User:Bawolff</a>"
+	},
+	{
+		"date": "May 2016",
+		"product": "MediaWiki 1.26.3, 1.25.6 and 1.23.14",
+		"cve": "none",
+		"desc": "No CVE documented. Please consult Phab for more info.",
+		"task": "<a href='https://phabricator.wikimedia.org/T123653' target='_blank'>T123653</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:MaxSem' target='_blank'>User:MaxSem</a>"
+	},
+	{
+		"date": "May 2016",
+		"product": "MediaWiki 1.26.3, 1.25.6 and 1.23.14",
+		"cve": "none",
+		"desc": "No CVE documented. Please consult Phab for more info.",
+		"task": "<a href='https://phabricator.wikimedia.org/T123071' target='_blank'>T123071</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Bawolff' target='_blank'>User:Bawolff</a>"
+	},
+	{
+		"date": "May 2016",
+		"product": "MediaWiki 1.26.3, 1.25.6 and 1.23.14",
+		"cve": "none",
+		"desc": "No CVE documented. Please consult Phab for more info.",
+		"task": "<a href='https://phabricator.wikimedia.org/T129506' target='_blank'>T129506</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:eranroz' target='_blank'>User:eranroz</a>"
+	},
+	{
+		"date": "May 2016",
+		"product": "MediaWiki 1.26.3, 1.25.6 and 1.23.14",
+		"cve": "none",
+		"desc": "No CVE documented. Please consult Phab for more info.",
+		"task": "<a href='https://phabricator.wikimedia.org/T125283' target='_blank'>T125283</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Matiia' target='_blank'>User:Matiia</a>"
+	},
+	{
+		"date": "May 2016",
+		"product": "MediaWiki 1.26.3, 1.25.6 and 1.23.14",
+		"cve": "none",
+		"desc": "No CVE documented. Please consult Phab for more info.",
+		"task": "<a href='https://phabricator.wikimedia.org/T103239' target='_blank'>T103239</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Fomafix' target='_blank'>User:Fomafix</a>"
+	},
+	{
+		"date": "May 2016",
+		"product": "MediaWiki 1.26.3, 1.25.6 and 1.23.14",
+		"cve": "none",
+		"desc": "No CVE documented. Please consult Phab for more info.",
+		"task": "<a href='https://phabricator.wikimedia.org/T122807' target='_blank'>T122807</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:CSteipp_(WMF)' target='_blank'>User:CSteipp (WMF)</a>"
+	},
+	{
+		"date": "May 2016",
+		"product": "MediaWiki 1.26.3, 1.25.6 and 1.23.14",
+		"cve": "none",
+		"desc": "No CVE documented. Please consult Phab for more info.",
+		"task": "<a href='https://phabricator.wikimedia.org/T130947' target='_blank'>T130947</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:MaxSem' target='_blank'>User:MaxSem</a>"
+	},
+	{
+		"date": "May 2016",
+		"product": "MediaWiki 1.26.3, 1.25.6 and 1.23.14",
+		"cve": "none",
+		"desc": "No CVE documented. Please consult Phab for more info.",
+		"task": "<a href='https://phabricator.wikimedia.org/T133507' target='_blank'>T133507</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Ori_Livneh' target='_blank'>User:Ori Livneh</a>"
+	},
+	{
+		"date": "May 2016",
+		"product": "MediaWiki 1.26.3, 1.25.6 and 1.23.14",
+		"cve": "none",
+		"desc": "No CVE documented. Please consult Phab for more info.",
+		"task": "<a href='https://phabricator.wikimedia.org/T110143' target='_blank'>T110143</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Bawolff' target='_blank'>User:Bawolff</a>"
+	},
+	{
+		"date": "May 2016",
+		"product": "MediaWiki 1.26.3, 1.25.6 and 1.23.14",
+		"cve": "none",
+		"desc": "No CVE documented. Please consult Phab for more info.",
+		"task": "<a href='https://phabricator.wikimedia.org/T132874' target='_blank'>T132874</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Anomie' target='_blank'>User:Anomie</a>"
+	},
+	{
+		"date": "May 2016",
+		"product": "MediaWiki 1.26.3, 1.25.6 and 1.23.14",
+		"cve": "none",
+		"desc": "No CVE documented. Please consult Phab for more info.",
+		"task": "<a href='https://phabricator.wikimedia.org/T127420' target='_blank'>T127420</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:PleaseStand' target='_blank'>User:PleaseStand</a>"
+	},
+	{
+		"date": "May 2016",
+		"product": "MediaWiki 1.26.3, 1.25.6 and 1.23.14",
+		"cve": "none",
+		"desc": "No CVE documented. Please consult Phab for more info.",
+		"task": "<a href='https://phabricator.wikimedia.org/T126685' target='_blank'>T126685</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:CSteipp_(WMF)' target='_blank'>User:CSteipp (WMF)</a>"
+	},
+	{
+		"date": "May 2016",
+		"product": "MediaWiki 1.26.3, 1.25.6 and 1.23.14",
+		"cve": "none",
+		"desc": "No CVE documented. Please consult Phab for more info.",
+		"task": "<a href='https://phabricator.wikimedia.org/T116030' target='_blank'>T116030</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:CSteipp_(WMF)' target='_blank'>User:CSteipp (WMF)</a>"
+	},
+	{
+		"date": "Dec 2015",
+		"product": "MediaWiki 1.26.1, 1.25.4, 1.24.5 and 1.23.12",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8628' target='_blank'>CVE-2015-8628</a>",
+		"desc": "The (1) Special:MyPage, (2) Special:MyTalk, (3) Special:MyContributions, (4) Special:MyUploads, and (5) Special:AllMyUploads pages in MediaWiki before 1.23.12, 1.24.x before 1.24.5, 1.25.x before 1.25.4, and 1.26.x before 1.26.1 allow remote attackers to obtain sensitive user login information via crafted links combined with page view statistics.",
+		"task": "<a href='https://phabricator.wikimedia.org/T109724' target='_blank'>T109724</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Xavier_Combelle' target='_blank'>User:Xavier Combelle</a>"
+	},
+	{
+		"date": "Dec 2015",
+		"product": "MediaWiki 1.26.1, 1.25.4, 1.24.5 and 1.23.12",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8627' target='_blank'>CVE-2015-8627</a>",
+		"desc": "MediaWiki before 1.23.12, 1.24.x before 1.24.5, 1.25.x before 1.25.4, and 1.26.x before 1.26.1 do not properly normalize IP addresses containing zero-padded octets, which might allow remote attackers to bypass intended access restrictions by using an IP address that was not supposed to have been allowed.",
+		"task": "<a href='https://phabricator.wikimedia.org/T97897' target='_blank'>T97897</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Vituzzu' target='_blank'>User:Vituzzu</a>"
+	},
+	{
+		"date": "Dec 2015",
+		"product": "MediaWiki 1.26.1, 1.25.4, 1.24.5 and 1.23.12",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8626' target='_blank'>CVE-2015-8626</a>",
+		"desc": "The User::randomPassword function in MediaWiki before 1.23.12, 1.24.x before 1.24.5, 1.25.x before 1.25.4, and 1.26.x before 1.26.1 generates passwords smaller than $wgMinimalPasswordLength, which makes it easier for remote attackers to obtain access via a brute-force attack.",
+		"task": "<a href='https://phabricator.wikimedia.org/T115522' target='_blank'>T115522</a>",
+		"name": "Frank R. Farmer"
+	},
+	{
+		"date": "Dec 2015",
+		"product": "MediaWiki 1.26.1, 1.25.4, 1.24.5 and 1.23.12",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8625' target='_blank'>CVE-2015-8625</a>",
+		"desc": "MediaWiki before 1.23.12, 1.24.x before 1.24.5, 1.25.x before 1.25.4, and 1.26.x before 1.26.1 do not properly sanitize parameters when calling the cURL library, which allows remote attackers to read arbitrary files via an @ (at sign) character in unspecified POST array parameters.",
+		"task": "<a href='https://phabricator.wikimedia.org/T118032' target='_blank'>T118032</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Catrope' target='_blank'>User:Catrope</a>"
+	},
+	{
+		"date": "Dec 2015",
+		"product": "MediaWiki 1.26.1, 1.25.4, 1.24.5 and 1.23.12",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8623' target='_blank'>CVE-2015-8623</a>",
+		"desc": "The User::matchEditToken function in includes/User.php in MediaWiki before 1.23.12 and 1.24.x before 1.24.5 does not perform token comparison in constant time before returning, which allows remote attackers to guess the edit token and bypass CSRF protection via a timing attack, a different vulnerability than CVE-2015-8624.",
+		"task": "<a href='https://gerrit.wikimedia.org/r/156336' target='_blank'>gerrit:156336</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Anomie' target='_blank'>User:Anomie</a>"
+	},
+	{
+		"date": "Dec 2015",
+		"product": "MediaWiki 1.26.1, 1.25.4, 1.24.5 and 1.23.12",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8624' target='_blank'>CVE-2015-8624</a>",
+		"desc": "The User::matchEditToken function in includes/User.php in MediaWiki before 1.23.12, 1.24.x before 1.24.5, 1.25.x before 1.25.4, and 1.26.x before 1.26.1 does not perform token comparison in constant time before determining if a debugging message should be logged, which allows remote attackers to guess the edit token and bypass CSRF protection via a timing attack, a different vulnerability than CVE-2015-8623.",
+		"task": "<a href='https://phabricator.wikimedia.org/T119309' target='_blank'>T119309</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Tgr_(WMF)' target='_blank'>User:Tgr (WMF)</a>"
+	},
+	{
+		"date": "Dec 2015",
+		"product": "MediaWiki 1.26.1, 1.25.4, 1.24.5 and 1.23.12",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8622' target='_blank'>CVE-2015-8622</a>",
+		"desc": "Cross-site scripting (XSS) vulnerability in MediaWiki before 1.23.12, 1.24.x before 1.24.5, 1.25.x before 1.25.4, and 1.26.x before 1.26.1, when is configured with a relative URL, allows remote authenticated users to inject arbitrary web script or HTML via wikitext, as demonstrated by a wikilink to a page named \"javascript:alert('XSS!').\"",
+		"task": "<a href='https://phabricator.wikimedia.org/T117899' target='_blank'>T117899</a>",
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Matma_Rex' target='_blank'>User:Matma Rex</a>"
+	}
+]

@@ -145,6 +145,18 @@ footer nav li a {
   transform: rotate(45deg) translate(-6px, -6px) ;
 }
 
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
 .wm-header-caption .icon {
   display: none;
 }
@@ -188,13 +200,14 @@ footer nav li a {
   color: #000;
   border-left-color: #000;
 }
-@media (max-width: 720px) {
+@media (max-width: 719px) {
   main {
     padding-top: 1rem;
   }
   .wm-site-nav {
     display: none;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    transition: 0.4s;
   }
   .wm-site-nav ul {
     margin: 0;
@@ -304,7 +317,7 @@ footer nav li a {
 }
 
 /* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 719px) {
   .flex-grid {
     display: block;
   }
@@ -313,6 +326,8 @@ footer nav li a {
     display: block;
     margin: 0 0 10px 0;
   }
+}
+@media screen and (max-width: 325px) {
   #scrollBtn {
     display: none !important;
   }
@@ -343,40 +358,91 @@ footer nav li a {
   color: grey;
   font-weight: normal;
 }
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
+/* ... Featured Projects / Updates ... */
+
+.services {
+	margin-top: 1.6em;
+	border-color: #c8ccd1;
+	border-style: solid;
+	border-width: 1px 0 0;
 }
-.accordion.active {
-  --expanded: "\002D";
+
+.services h2 {
+		color: #72777d;
+		margin-top: 1.6em;
+		font-size: 1.4rem;
+		font-weight: 400;
+    border-bottom: none;
 }
-.accordion:after {
-  content: var(--expanded, "\002B");
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+
+.flex-grid.service {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+	margin: 2.4rem 0 0;
+	padding: 0 0 0.8rem;
 }
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.accordion:hover {
-  background-color: #ccc;
+
+.flex-grid.service:after {
+  content:' ';
+  display: block;
+  clear: both;
 }
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
+
+.feature,
+.update {
+	color: #000;
+	list-style: none none;
+	display: inline-block;
+	margin-bottom: 4rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
+	-moz-border-radius: 2px;
+	     border-radius: 2px;
+	vertical-align: top;
 }
+
+.feature__card,
+	.update__card {
+		color: #222;
+		display: block;
+	}
+
+.feature__card:hover,
+	.update__card:hover {
+		text-decoration: none;
+	}
+
+.feature__card--title,
+	.update__card--title {
+		margin-top: 0;
+		font-family: serif; /* Fallback */
+		font-size: 2.4rem;
+		font-weight: 400;
+	}
+
+.feature__card--desc,
+	.update__card--desc {
+		color: #222;
+		display: block;
+		margin-top: 0.8rem;
+		font-size: 1.4rem;
+		line-height: 1.6;
+	}
+
+.feature__card--desc:after,
+	.update__card--desc:after {
+		content: 'Read more';
+		color: #36c;
+		display: block;
+		margin-top: 1.2rem;
+	}
+
+.feature__card:hover .feature__card--desc:after,
+	.update__card:hover .update__card--desc:after {
+		text-decoration: underline;
+	}
+
 #scrollBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -385,13 +451,16 @@ footer nav li a {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: rgb(167, 29, 29); /* Set a background color */
-  color: white; /* Text color */
+  background-color: rgb(180, 180, 180); /* Set a background color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
   border-radius: 50%; /* Rounded corners */
   font-size: 18px; /* Increase font size */
+  transition: 0.2s;
+  opacity: 0.9;
 }
 #scrollBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: rgb(140, 140, 140); /* Add a dark-grey background on hover */
 }

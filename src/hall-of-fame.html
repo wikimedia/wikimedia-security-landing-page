@@ -6,7 +6,13 @@ title: Hall of Fame - Wikimedia Security
 	<img src="/img/logo.png" alt="logo" />
 	<h1>Hall of Fame</h1>
 </div>
+<br>
 <p>This page contains various people that the Wikimedia Security Team would like to give thanks to for responsibly reporting security issues.</p>
+<p>If you've previously reported a valid security issue (and had it acknowledged and fixed) to Wikimedia, and would like mentioning on this page, please <a href="/contact">contact us</a> and provide details.</p>
+<p>Submit your previously-resolved security issues for Hall of Fame consideration using this <a href="https://forms.gle/57qJi8RuTnyBf2ec8">Google Form</a> (<a href="https://foundation.wikimedia.org/wiki/Legal:Wikimedia_Security_Team_%22Hall_of_Fame%22_Nomination_Privacy_Statement">Google Form Privacy Statement</a>).</p>
+
+<h3>Hall of Fame (December 2015 - Current)</h3>
+
 <table class="wm-table">
 	<tr>
 		<th>Date</th>
@@ -27,4 +33,21 @@ title: Hall of Fame - Wikimedia Security
 	</tr>
 {%- endfor %}
 </table>
-<p>If you've previously reported a valid security issue (and had it acknowledged and fixed) to Wikimedia, and would like mentioning on this page, please <a href="/contact">contact us</a> and provide details.</p>
+
+<h3>Hall of Fame (Older)</h3>
+<table class="wm-table">
+	<tr>
+		<th>Year</th>
+		<th>Reporter</th>
+		<th>Found</th>
+		<th>Fixed</th>
+	</tr>
+{%- for item in site.data.oldhalloffame -%}
+	<tr>
+		<td>{{ item.year }}</td>
+		<td>{{ item.name }}</td>
+		<td>{{ item.found }}</td>
+		<td>{{ item.fixed }}</td>
+	</tr>
+{%- endfor %}
+</table>

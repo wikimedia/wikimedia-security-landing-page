@@ -2,11 +2,29 @@
   text: Home
 - href: /services/
   text: Services
+  tags: services
+  subpages:
+    - href: /capabilities-management/
+      text: Capabilities Management
+    - href: /cyber-risk/
+      text: Cyber Risk
+    - href: /fusion-center/
+      text: Fusion Center
+    - href: /security-architecture/
+      text: Security Architecture
 - href: /handbook/
   text: Team Handbook
+  tags: handbook
+  subpages:
+    - href: /communications-and-hours/
+      text: Communications and Hours
+    - href: /quarterly-goals-and-development/
+      text: Quarterly Goals, OKRs and Development
+    - href: /workflow-and-intake/
+      text: Workflow and Intake
 - href: /contact/
   text: Contact
-- href: /hall-of-fame
+- href: /hall-of-fame/
   text: Hall of Fame
-- href: /bug-bounty
+- href: /bug-bounty/
   text: Bug Bounty

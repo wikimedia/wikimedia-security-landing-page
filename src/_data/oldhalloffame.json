@@ -1,0 +1,164 @@
+[
+	{
+		"name": "Sergey Belov",
+		"found": "<a href='https://phabricator.wikimedia.org/T118769' target='_blank'>T118769</a>",
+		"fixed": "",
+		"year": "2016"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Ori_Livneh' target='_blank'>User:Ori Livneh</a>",
+		"found": " ",
+		"fixed": "<a href='https://phabricator.wikimedia.org/T118769' target='_blank'>T118769</a>",
+		"year": "2016"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:BWolff_(WMF)' target='_blank'>User:BWolff (WMF)</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-2933' target='_blank'>CVE-2015-2933</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-2932' target='_blank'>CVE-2015-2932</a>",
+		"fixed": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8628' target='_blank'>CVE-2015-8628</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-2933' target='_blank'>CVE-2015-2933</a>",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:BJorsch_(WMF)' target='_blank'>User:BJorsch (WMF)</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8004' target='_blank'>CVE-2015-8004</a>",
+		"fixed": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8623' target='_blank'>CVE-2015-8623</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-8626' target='_blank'>CVE-2015-8626</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-8001' target='_blank'>CVE-2015-8001</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-8002' target='_blank'>CVE-2015-8002</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-6728' target='_blank'>CVE-2015-6728</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-2938' target='_blank'>CVE-2015-2938</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-8004' target='_blank'>CVE-2015-8004</a>",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Brion_Vibber_(WMF)' target='_blank'>User:Brion Vibber (WMF)</a>",
+		"found": " ",
+		"fixed": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-6735' target='_blank'>CVE-2015-6735</a>",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Bsadowski1' target='_blank'>User:Bsadowski1</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-6727' target='_blank'>CVE-2015-6727</a>",
+		"fixed": " ",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:CSteipp_(WMF)' target='_blank'>User:CSteipp (WMF)</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8003' target='_blank'>CVE-2015-8003</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-6732' target='_blank'>CVE-2015-6732</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-6732' target='_blank'>CVE-2015-6732</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-6728' target='_blank'>CVE-2015-6728</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-6730' target='_blank'>CVE-2015-6730</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-2937' target='_blank'>CVE-2015-2937</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-2934' target='_blank'>CVE-2015-2934</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-2936' target='_blank'>CVE-2015-2936</a>",
+		"fixed": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8009' target='_blank'>CVE-2015-8009</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-8008' target='_blank'>CVE-2015-8008</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-8003' target='_blank'>CVE-2015-8003</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-6732' target='_blank'>CVE-2015-6732</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-6731' target='_blank'>CVE-2015-6731</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-6730' target='_blank'>CVE-2015-6730</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-2931' target='_blank'>CVE-2015-2931</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-2937' target='_blank'>CVE-2015-2937</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-2934' target='_blank'>CVE-2015-2934</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-2942' target='_blank'>CVE-2015-2942</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-2932' target='_blank'>CVE-2015-2932</a>",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:DPatrick_(WMF)' target='_blank'>User:DPatrick (WMF)</a>",
+		"found": "",
+		"fixed": "<a href='https://phabricator.wikimedia.org/T98533' target='_blank'>T98533</a>",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Frankrfarmer' target='_blank'>User:Frankrfarmer</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8626' target='_blank'>CVE-2015-8626</a>",
+		"fixed": " ",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Grunny' target='_blank'>User:Grunny</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-6731' target='_blank'>CVE-2015-6731</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-8006' target='_blank'>CVE-2015-8006</a>",
+		"fixed": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8006' target='_blank'>CVE-2015-8006</a>",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Hoo_man' target='_blank'>User:Hoo man</a>",
+		"found": " ",
+		"fixed": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-6736' target='_blank'>CVE-2015-6736</a>",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Jackmcbarn' target='_blank'>User:Jackmcbarn</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-2939' target='_blank'>CVE-2015-2939</a>",
+		"fixed": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-2939' target='_blank'>CVE-2015-2939</a>",
+		"year": "2015"
+	},
+	{
+		"name": "John Menerick",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-6729' target='_blank'>CVE-2015-6729</a>",
+		"fixed": "",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Legoktm' target='_blank'>User:Legoktm</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8007' target='_blank'>CVE-2015-8007</a>",
+		"fixed": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-6727' target='_blank'>CVE-2015-6727</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-2941' target='_blank'>CVE-2015-2941</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-2940' target='_blank'>CVE-2015-2940</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-8007' target='_blank'>CVE-2015-8007</a>",
+		"year": "2015"
+	},
+	{
+		"name": "Majr",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-6737' target='_blank'>CVE-2015-6737</a>",
+		"fixed": "",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:MaxSem' target='_blank'>User:MaxSem</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-6733' target='_blank'>CVE-2015-6733</a>",
+		"fixed": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-6734' target='_blank'>CVE-2015-6734</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-6733' target='_blank'>CVE-2015-6733</a>",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:McZusatz' target='_blank'>User:McZusatz</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-6735' target='_blank'>CVE-2015-6735</a>",
+		"fixed": "",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Ngocdh' target='_blank'>User:Ngocdh</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-6734' target='_blank'>CVE-2015-6734</a>",
+		"fixed": "",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Parent5446' target='_blank'>User:Parent5446</a>",
+		"found": "",
+		"fixed": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-2936' target='_blank'>CVE-2015-2936</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-2935' target='_blank'>CVE-2015-2935</a>",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Roan_Kattouw_(WMF)' target='_blank'>User:Roan Kattouw (WMF)</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8625' target='_blank'>CVE-2015-8625</a>",
+		"fixed": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8625' target='_blank'>CVE-2015-8625</a>",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:RobinHood70' target='_blank'>User:RobinHood70</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8001' target='_blank'>CVE-2015-8001</a>",
+		"fixed": "",
+		"year": "2015"
+	},
+	{
+		"name": "Richard Stanway",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8005' target='_blank'>CVE-2015-8005</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-8002' target='_blank'>CVE-2015-8002</a>",
+		"fixed": "",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Sitic' target='_blank'>User:Sitic</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8009' target='_blank'>CVE-2015-8009</a>, <a href='https://www.cve.org/CVERecord?id=CVE-2015-8008' target='_blank'>CVE-2015-8008</a>",
+		"fixed": "",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Tgr_(WMF)' target='_blank'>User:Tgr (WMF)</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8624' target='_blank'>CVE-2015-8624</a>",
+		"fixed": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8624' target='_blank'>CVE-2015-8624</a>",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Vituzzu' target='_blank'>User:Vituzzu</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8627' target='_blank'>CVE-2015-8627</a>",
+		"fixed": "",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:Xavier_Combelle' target='_blank'>User:Xavier Combelle</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-8628' target='_blank'>CVE-2015-8628</a>",
+		"fixed": "",
+		"year": "2015"
+	},
+	{
+		"name": "<a href='https://meta.wikimedia.org/wiki/User:^demon' target='_blank'>User:^demon</a>",
+		"found": "<a href='https://www.cve.org/CVERecord?id=CVE-2015-6736' target='_blank'>CVE-2015-6736</a>",
+		"fixed": "",
+		"year": "2015"
+	}
+]
