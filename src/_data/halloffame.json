@@ -10,7 +10,7 @@
 	{
 		"date": "2021-10-16",
 		"product": "WikibaseMediaInfo extension",
-		"cve": "CVE-2021-TBD",
+		"cve": "CVE-2021-46146",
 		"desc": "Stored XSS via WikibaseMediaInfo caption fields at commons.wikimedia.org",
 		"task": "<a href='https://phabricator.wikimedia.org/T293556' target='_blank'>T293556</a>",
 		"name": "Aidil Arief"
