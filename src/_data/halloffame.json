@@ -1,5 +1,13 @@
 [
 	{
+		"date": "2022-10-14",
+		"product": "MediaWiki Core",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=TBD' target='_blank'>TBD</a>",
+		"desc": "XSS in Special:Search",
+		"task": "<a href='https://phabricator.wikimedia.org/T320785' target='_blank'>T320785</a>",
+		"name": "Sheldon Menezes"
+	},
+	{
 		"date": "2021-10-17",
 		"product": "VisualEditor Extension",
 		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2021-44855' target='_blank'>CVE-2021-44855</a>",
