@@ -1,8 +1,16 @@
 [
 	{
+		"date": "2023-02-20",
+		"product": "OATHAuth Extension",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2023-29142' target='_blank'>CVE-2023-29142</a>",
+		"desc": "OATHAuth allows replay attacks when configured without ObjectCache",
+		"task": "<a href='https://phabricator.wikimedia.org/T330086' target='_blank'>T330086</a>",
+		"name": "Majid Alqabandi"
+	},
+	{
 		"date": "2022-10-14",
 		"product": "MediaWiki Core",
-		"cve": "<a href='https://www.cve.org/CVERecord?id=TBD' target='_blank'>TBD</a>",
+		"cve": "None, never released",
 		"desc": "XSS in Special:Search",
 		"task": "<a href='https://phabricator.wikimedia.org/T320785' target='_blank'>T320785</a>",
 		"name": "Sheldon Menezes"
