@@ -1,5 +1,13 @@
 [
 	{
+		"date": "2024-02-24",
+		"product": "doc.wikimedia.org (via yard)",
+		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2024-27285' target='_blank'>CVE-2024-27285</a>",
+		"desc": "Reflected XSS on doc.wikimedia.org via the yard dependency",
+		"task": "<a href='https://phabricator.wikimedia.org/T358507' target='_blank'>T358507</a>",
+		"name": "Aviv Keller"
+	},
+	{
 		"date": "2023-02-20",
 		"product": "OATHAuth Extension",
 		"cve": "<a href='https://www.cve.org/CVERecord?id=CVE-2023-29142' target='_blank'>CVE-2023-29142</a>",
